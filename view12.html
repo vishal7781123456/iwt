@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXP-12</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        pre{
+            font-size: 25px;
+            font-family: monospace;
+        }
+        pre:hover{
+            color:crimson;
+        }
+    </style>
+</head>
+<body background=https://images.wallpaperscraft.com/image/single/blocks_macro_photo_lot_game_black_white_74378_1920x1080.jpg>
+    <h2>Linear search</h2>
+   <strong><pre>
+        a=[]
+        n=int(input("enter the length of list :"))
+        for i in range(n):
+            b=int(input("enter the elements in list :"))
+            a.append(b)
+        print(a)
+        key=int(input("enter the elements you want to search :"))
+        for i in range(n):
+            if key==a[i]:
+                loc=i
+                break
+            else:
+                loc=-1
+        if loc<0:
+            print("element is not found")
+        else:
+            print(key,"found at",loc+1)
+        </pre>
+        <h2>Binary Search</h2>
+</strong>      
+</body>
+</html>

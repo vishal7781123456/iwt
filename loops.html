@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<style>
+    p,pre{
+        font-size: 25px;
+        color:crimson;
+    }
+    p:hover,pre:hover,h3:hover{
+        color:black; 
+    }
+</style>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+<pre>Array which we taken <pre>
+<h3 id="gm"></h3>
+<pre> By for loop </pre>
+<p id="demo"></p>
+<pre> By for of loop</pre>
+<p id="dem"></p>
+<pre>By for in loop</pre>
+<p id="fem"></p>
+<pre>By while loop</pre>
+<p id="fm"></p>
+
+<script>
+const cars = ["Lamborghini", "Maserati", "Ford", "Mustang", "Supra", "Audi"];
+document.getElementById("gm").innerHTML=cars
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+let tex = "";
+for (let x of cars) {
+  tex += x + "<br>";
+}
+document.getElementById("dem").innerHTML = tex
+let t="";
+for (let x in cars) {
+  t += cars[x] + "<br>";
+}
+document.getElementById("fem").innerHTML = t
+let u=0
+let e=""
+while (u <cars.length) {
+  e +=  cars[u]+"<br>";
+  u++;
+}
+document.getElementById("fm").innerHTML = e;
+</script>
+</body>
+</html>

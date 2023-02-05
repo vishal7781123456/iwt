@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Book</title>
+    <link rel="stylesheet" href="6.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color:black; text-align:center;font-family: 'Times New Roman', Times, serif;">Diary Food Form</h1>
+    <br><br>
+    <hr><br><br>
+    <div class="frm" style="color:black">
+        <form name="register_form" onsubmit="return false">
+            <label for="name">Full Name</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" style="background-color:black;color:black" id="name"
+                placeholder="    Enter your name" autocomplete="off" />
+            <br><br><span class="error" style="color:red">
+                <p id="name_error"></p>
+            </span>
+            <br />
+            <label for="email">Email :</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email"
+                style="background-color:black;color:black" id="email" placeholder="    Enter your email id"
+                autocomplete="off" />
+            <br /><br>
+            <span class="error" style="color:red">
+                <p id="email_error"></p>
+            </span>
+            <br />
+            <label for="telephone">Mobile no. :</label>
+
+            &nbsp;&nbsp;<input type="tel" style="background-color:black;color:black" id="telephone"
+                placeholder="    Enter phone number" autocomplete="off" />
+            <br /><br>
+            <span class="error" style="color:red">
+                <p id="telephone_error"></p>
+            </span>
+            <br><br>
+            <label for="gender">Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="male" id="gen"> Male
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="gen" name="gender" value="female" /> Female
+            <br /><br>
+            <span class="error" style="color:red">
+                <p class="error" style="color:red" id="gender_error"></p>
+            </span>
+            <br><br>
+            <label for="password">Password :</label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<input style="background-color:black;color:black" type="password" id="password"
+                placeholder="    Password" autocomplete="off" />
+            <br /><br>
+            <span class="error" style="color:red">
+                <p id="password_error"></p>
+            </span>
+            <br><br>
+            <button type="submit" style="margin-left:20px;font-size:medium" class="subtn"
+                onclick="validate_form()">Submit</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="subtn" style="font-size:medium" type="button"
+                onclick="clear_fields()">Reset</button>
+        </form>
+    </div><br><br>
+    <hr><br>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript" src="quest.js"></script>
+
+</html>

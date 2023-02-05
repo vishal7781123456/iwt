@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+    <title>Hobbies</title>
+    <style>
+        .b1,.b2,.b3{
+            border: 2px solid blueviolet;
+               font-size: 28px;
+               font-family: monospace;
+               position:absolute ;
+               overflow: hidden;
+               cursor: pointer;
+        }
+        .b1:hover,.b2:hover,.b3:hover{
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(195, 24, 18);">My Hobbies are: </h1>
+    <img src="https://media.gettyimages.com/photos/cricket-stumps-picture-id172866257?k=20&m=172866257&s=612x612&w=0&h=SmMxo8wPj_U1Izg_VN6Uy7x5WWQVANz908KGJnjp06s=" alt="error" width="160px" height="180px" float="right" >
+    <a href="cricket.html" target="_blank" style="font-size: 36px;"><button class="b3">1. Cricket</button></a><br>
+    <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="error" width="160px" height="180px" float="right" >
+    <a href="music.html" target="_blank" style="font-size: 36px ;"><button class="b2">2. Music</button></a><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu4d5mCqg6bnIILOeEFYqbdLujZ1oMFOeLA&usqp=CAU" alt="error" width="160px" height="180px" float="right">
+    <a href="games.html" target="_blank" style="font-size: 36px;"><button class="b3">3. Vedio Games</button></a><br>
+<h3>Time : <span id="time"></span></h3>
+    <script>
+        const time_element = document.getElementById('time')
+        setInterval(function () {time_element.innerHTML = Date()})
+    </script>
+    
+</body>
+</html>

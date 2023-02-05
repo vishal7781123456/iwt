@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <h2 style="color:black;text-align:center">Copying, passing & comparing by value, reference. References themselves
+        are
+        passed by value
+    </h2><br><br>
+    <hr><br><br>
+    <h1 style="color:crimson;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;js code</h1>
+    <div>
+        <pre>
+            <code class="language-python" style="font-size:larger">
+       1. // Copying, passing, and comparing by value
+       2. let x = 50
+       3. let y = x
+       4. x = 40
+       5. console.log('Copying, passing, and comparing by value Output: ' + y)   
+       6. // Copying, passing, and comparing by reference
+       7. x = {name: "nitin"}
+       8. y = x
+       9. x.name = "rahul"
+       10. console.log('Copying, passing, and comparing by reference Output: ' + y.name)   
+       11. // References themselves are passed by value
+       12. let count = 0
+       13. const increase_count = (count) => {
+       14.     count++
+       15. }
+       16. increase_count(count)
+       17. console.log('References themselves are passed by value Output: ' + count)
+            </code>
+        </pre>
+    </div>
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+</html>

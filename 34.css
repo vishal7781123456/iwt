@@ -1,0 +1,22 @@
+
+
+body {
+    height: auto;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, white 100%);
+}
+.btndis {
+    background-color: #000000;
+    box-shadow: 0px 2px 30px blueviolet ;
+    color: #ffffff;
+    text-decoration: solid;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 590px;
+    position: absolute;
+}

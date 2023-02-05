@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>IWT Lab</title>
+<link rel="stylesheet" href="e7.css">
+ </head>
+ <body>
+ <div>
+ <h1 id="do">Remove underline from hyperlinks</h1>
+ </div>
+ <p style="font-size: 200%;">
+ <button type="button" onclick="changebg() ">change background-color</button>
+ <button type="button" onclick="changefont()">change font-size</button>
+ <button type="button" onclick="changefontc() ">change font-color</button>
+ <button type="button" onclick="removelink()">remove underline from hyperlinks</button><br>
+ <a id="dom" href="https://www.google.co.in" target="_blank">check here</a>
+ </p>
+ <script>
+     const changebg = () => {
+        document.body.style.backgroundColor = "white"
+     }
+     const changefont = () => {
+        document.body.style.fontSize = "x-large"
+    }
+    const changefontc = () => {
+        document.getElementById("do").style.color ="red"    
+    }
+    const removelink=()=> {
+        document.getElementById("dom").style.textDecoration="none"
+    }
+ </script>
+ </body>
+ </html>
